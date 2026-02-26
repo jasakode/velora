@@ -1,0 +1,1 @@
+import{_ as i,o as a,c as e,ae as t}from"./chunks/framework.6xBUw1Fg.js";const c=JSON.parse('{"title":"Velora","description":"","frontmatter":{},"headers":[],"relativePath":"index.md","filePath":"index.md"}'),n={name:"index.md"};function p(l,s,h,r,d,o){return a(),e("div",null,[...s[0]||(s[0]=[t("",8)])])}const u=i(n,[["render",p]]);export{c as __pageData,u as default};
