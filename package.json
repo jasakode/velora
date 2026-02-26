@@ -1,9 +1,15 @@
 {
   "name": "velora",
   "version": "1.0.1",
-  "type": "module",
+  "keywords": [
+    "Jasakode Velora",
+    "Rich Text Editor"
+  ],
   "description": "Velora is a free, feature-rich web text editor library designed for everyone. It provides a flexible and modern editing experience for building powerful text-based applications.",
-  "main": "index.js",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "directories": {
     "doc": "docs"
   },
@@ -12,13 +18,24 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
-    "deploy": "vitepress build docs && gh-pages -d docs/.vitepress/dist"
+    "deploy": "vitepress build docs && gh-pages -d docs/.vitepress/dist",
+    "dev": "vite",
+    "build": "tsc"
   },
-  "keywords": [],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "gh-pages": "^6.3.0",
+    "typescript": "^5.9.3",
     "vitepress": "^1.6.4"
   }
 }
